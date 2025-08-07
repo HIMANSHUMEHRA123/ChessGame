@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chess Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .chessboard {
@@ -34,12 +34,12 @@
             justify-content: center;
         }
 
-        .square.Light {
-            background-color: #ffffff;
+        .square.light {
+            background-color: #f0d9b5; /* A standard light square color */
         }
 
         .square.dark {
-            background-color: #0e8cc7;
+            background-color: #b58863; /* A standard dark square color */
         }
 
         .piece {
@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="w-full h-screen flex justify-center items-center bg-zinc-900">
-        <div class="chessboard w-96 h-96 bg-red-600"></div>
+        <div class="chessboard w-96 h-96"></div>
     </div>
 
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
@@ -72,4 +72,4 @@
 
     <script src="/js/chessgame.js"></script>
 </body>
-</html> 
+</html>
